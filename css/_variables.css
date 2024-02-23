@@ -1,0 +1,5 @@
+:root {
+  --header-size: 90px;
+  --footer-size: 70px;
+  --content-size: calc(100vh - var(--footer-size));
+}

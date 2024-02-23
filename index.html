@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Angie Chalany</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="app.js" defer></script> 
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <h1>Port<span class="highlight">folio.</span></h1>
+      </div>
+
+      <div class="right menu">
+        <div class="menu-item home highlight" data-scroll-to="home">Home</div>
+        <div class="menu-item about" data-scroll-to="about">About</div>
+        <div class="menu-item skills" data-scroll-to="skills">Skills</div>
+        <div class="menu-item projects" data-scroll-to="projects">Projects</div>
+        <div class="menu-item contact" data-scroll-to="contact">Contact</div>
+      </div>
+    </header>
+
+    <main>
+      <section  class="home">
+        <div class="inner">
+          <div class="hello highlight">Hello, I'm</div>
+          <div class="name">Angelika <span class="written">Chalány</span></div>
+          <br />
+          <div class="position">UX/UI Designer</div>
+          <div class="position">FronEnd Developer</div>
+
+          <button class="btn btn-outline contact-me" data-scroll-to="contact">
+            <span class="label" data-scroll-to="contact">Contact Me</span>
+          </button>
+        </div>
+        <div class="background"></div>
+      </section>
+
+      <section class="about daco">
+        <div class="content">
+          <h1 class="title" data-menu-item="about">About me</h1>
+
+          <div class="inner">
+            <div class="photo">
+              <img src="assets/images/photo.png" />
+            </div>
+
+            <div class="description">
+              <h2 class="title highlight">Who I am?</h2>
+              <div class="text">
+                <div>
+                  I have many years of experience working with clients as a
+                  banker and mortgage specialist. Subsequently, thanks to my
+                  passion for technology and desire to progress, I became an IT
+                  product manager. Later, I continued in the team as a Product
+                  Owner and covered the e-banking management department in the
+                  digital division.
+                </div>
+                <div>
+                  Since design remained my unfulfilled dream, I decided to start
+                  studying and creating frontend and web design. Now I want to
+                  take advantage of my experience add my creativity and determination and grow together with the company while working on interesting
+                  projects in a great team.
+                </div>
+              </div>
+
+              <form
+                class="download-form"
+                method="get"
+                action="./assets/pdf/Chalany_resume.pdf"
+              >
+                <button class="btn btn-fill download">
+                  <span class="label">Download Resume</span>
+                  <img src="assets/svgs/downlod.svg" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="content">
+          <h1 class="title" data-menu-item="skills">My Skills</h1>
+
+          <div class="skill-levels">
+            <div class="left">
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Figma</div>
+                  <div class="percentage">90%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">InDesign</div>
+                  <div class="percentage">80%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Photoshop</div>
+                  <div class="percentage">80%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Illustrator</div>
+                  <div class="percentage">80%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Wordpress</div>
+                  <div class="percentage">80%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="skill">
+                <div class="label">
+                  <div class="title">HTML</div>
+                  <div class="percentage">75%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">CSS</div>
+                  <div class="percentage">75%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Javascript</div>
+                  <div class="percentage">40%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Bootstrap</div>
+                  <div class="percentage">80%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Microsoft Office</div>
+                  <div class="percentage">99%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="content">
+          <h1 class="title" data-menu-item="projects">Projects</h1>
+          <div class="inner">
+            <div class="project">
+              <img
+                class="project-img"
+                src="assets/images/projects/tobacco_ad.png"
+              />
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="assets/images/projects/mountains_notepad.png"
+              />
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="assets/images/projects/mountains_tv.png"
+              />
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="assets/images/projects/tablet.png"
+              />
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="assets/images/projects/valentine_postcard.png"
+              />
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="assets/images/projects/brogure.png"
+              />
+            </div>
+            <div class="project">
+              <img
+                class="project-img"
+                src="assets/images/projects/hoodie_paddleboard.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="content">
+          <h1 class="title" data-menu-item="contact">Contact Me</h1>
+
+          <div class="inner">
+            <div class="message-me">
+              <form
+                class="contact-form"
+                action="https://formspree.io/f/meqwvalv"
+                method="POST"
+              >
+                <div class="row">
+                  <input type="text" name="name" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="E-mail"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <textarea
+                    name="message"
+                    id="contact-form-message"
+                    aria-labelledby="contact-form-message-label"
+                    class="message"
+                    rows="7"
+                    required
+                    placeholder="Your message..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline">
+                  <span class="label">Send Message</span>
+                </button>
+              </form>
+            </div>
+
+            <div class="get-in-touch">
+              <h2 class="title highlight">Get In Touch</h2>
+              <div class="text">
+                <div>
+                  Please feel free to contact me if you need any further
+                  information.
+                </div>
+                <div>
+                  I look forward to our successful working relationship in the
+                  future.
+                </div>
+              </div>
+
+              <div class="contacts">
+                <div class="contact person">
+                  <img src="assets/svgs/contacts/person.svg" /><span
+                    >Angelika Chalány</span
+                  >
+                </div>
+                <div class="contact location">
+                  <img src="assets/svgs/contacts/location.svg" /><span
+                    >Bratislava, Slovakia</span
+                  >
+                </div>
+                <div class="contact email">
+                  <img src="assets/svgs/contacts/e-mail.svg" /><span
+                    >angelikabrinckova@gmail.com</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>Created By <span class="highlight">AngieChalany </span></div>
+      <div>©</div>
+      <div>2023 All Right Reserved.</div>
+    </footer>
+  </body>
+</html>
