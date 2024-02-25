@@ -471,8 +471,7 @@ main > .contact > .content > .inner {
   gap: 40px;
 }
 
-main > .contact > .content > .inner > .message-me,
-main > .contact > .content > .inner > .get-in-touch {
+main > .contact > .content > .inner > .message-me {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
@@ -551,41 +550,6 @@ main > .contact > .content > .inner > .message-me textarea:focus {
 main > .contact > .content > .inner > .message-me > .contact-form > button {
   width: 300px;
   height: 66px;
-}
-
-main > .contact > .content > .inner > .get-in-touch > .title {
-  margin-bottom: 24px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 47px;
-}
-
-main > .contact > .content > .inner > .get-in-touch > .text {
-  max-width: 600px;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 40px;
-}
-
-main > .contact > .content > .inner > .get-in-touch > .contacts {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-main > .contact > .content > .inner > .get-in-touch > .contacts > .contact {
-  display: flex;
-  align-items: center;
-}
-
-main > .contact > .content > .inner > .get-in-touch > .contacts span {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 40px;
-  margin-left: 34px;
 }
 
 footer {
@@ -670,10 +634,6 @@ footer {
     flex-direction: column;
   }
 
-  main > .contact > .content > .inner > .get-in-touch {
-    margin-top: 50px;
-    align-self: flex-end;
-  }
 }
 
 @media screen and (max-width: 1399px) {
@@ -763,9 +723,6 @@ footer {
     min-height: auto;
   }
 
-  main > .contact > .content > .inner > .get-in-touch {
-    align-self: flex-start;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -822,33 +779,6 @@ footer {
   main > .contact > .content > .inner > .message-me > .contact-form > .row {
     flex-direction: column;
     gap: 20px;
-  }
-
-  main > .contact > .content > .inner > .get-in-touch > .title {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  main > .contact > .content > .inner > .get-in-touch > .title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  main > .contact > .content > .inner > .get-in-touch > .text > div {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  main
-    > .contact
-    > .content
-    > .inner
-    > .get-in-touch
-    > .contacts
-    > .contact
-    > span {
-    font-size: 20px;
-    line-height: 24px;
   }
 
   footer {
@@ -919,17 +849,5 @@ footer {
 
   main > .contact > .content {
     padding: 0 25px;
-  }
-
-  main > .contact > .content > .inner > .get-in-touch > .contacts {
-    align-items: center;
-  }
-
-  main > .contact > .content > .inner > .get-in-touch > .contacts > .contact {
-    flex-direction: column;
-  }
-
-  main > .contact > .content > .inner > .get-in-touch > .contacts span {
-    margin-left: 0;
   }
 }
