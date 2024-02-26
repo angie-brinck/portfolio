@@ -8,6 +8,8 @@
     <title>Angie Chalany</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="preload" href="../assets/images/rainbow.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;800;900&display=swap"
       rel="stylesheet"
@@ -23,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
-    <script type="text/javascript" src="app.js" defer></script> 
+    <script type="text/javascript" src="app.js" defer></script>
   </head>
 
   <body>
@@ -58,7 +60,7 @@
         <div class="background"></div>
       </section>
 
-      <section class="about daco">
+      <section class="about">
         <div class="content">
           <h1 class="title" data-menu-item="about">About me</h1>
 
@@ -68,40 +70,45 @@
             </div>
 
             <div class="description">
-              <h2 class="title highlight">Who I am?</h2>
-              <div class="text">
-                <div>
-                  I have many years of experience working with clients as a
-                  banker and mortgage specialist. Subsequently, thanks to my
-                  passion for technology and desire to progress, I became an IT
-                  product manager. Later, I continued in the team as a Product
-                  Owner and covered the e-banking management department in the
-                  digital division.
+              <div class="wrapper">
+                <h2 class="title highlight">Who I am?</h2>
+                <div class="text">
+                  <div>
+                    I have many years of experience working with clients as a
+                    banker and mortgage specialist. Subsequently, thanks to my
+                    passion for technology and desire to progress, I became an IT
+                    product manager. Later, I continued in the team as a Product
+                    Owner and covered the e-banking management department in the
+                    digital division.
+                  </div>
+                  <div>
+                    Since design remained my unfulfilled dream, I decided to start
+                    studying and creating frontend and web design. Now I want to
+                    take advantage of my experience, add my creativity and determination and grow together with the company while working on interesting
+                    projects in a great team.
+                  </div>
                 </div>
-                <div>
-                  Since design remained my unfulfilled dream, I decided to start
-                  studying and creating frontend and web design. Now I want to
-                  take advantage of my experience, add my creativity and determination and grow together with the company while working on interesting
-                  projects in a great team.
-                </div>
-              </div>
 
-              <form
-                class="download-form"
-                method="get"
-                action="./assets/pdf/Chalany_resume.pdf"
-              >
-                <button class="btn btn-fill download">
-                  <span class="label">Download Resume</span>
-                  <img src="assets/svgs/downlod.svg" />
-                </button>
-              </form>
-            </div>
+                <form
+                  class="download-form"
+                  method="get"
+                  action="./assets/pdf/Chalany_resume.pdf"
+                >
+                  <button class="btn btn-fill download">
+                    <span class="label">Download Resume</span>
+                    <img src="assets/svgs/downlod.svg" />
+                  </button>
+                </form>
+              </div>
+              </div>
           </div>
         </div>
       </section>
 
       <section class="skills">
+        <div class="image-left">
+          <img src="assets/images/hero_background.svg" alt="skills_left" />
+        </div>
         <div class="content">
           <h1 class="title" data-menu-item="skills">My Skills</h1>
 
@@ -116,29 +123,29 @@
               </div>
               <div class="skill">
                 <div class="label">
-                  <div class="title">InDesign</div>
-                  <div class="percentage">80%</div>
-                </div>
-                <div class="bar"></div>
-              </div>
-              <div class="skill">
-                <div class="label">
                   <div class="title">Photoshop</div>
-                  <div class="percentage">80%</div>
+                  <div class="percentage">90%</div>
                 </div>
                 <div class="bar"></div>
               </div>
               <div class="skill">
                 <div class="label">
                   <div class="title">Illustrator</div>
-                  <div class="percentage">80%</div>
+                  <div class="percentage">90%</div>
                 </div>
                 <div class="bar"></div>
               </div>
               <div class="skill">
                 <div class="label">
-                  <div class="title">Wordpress</div>
-                  <div class="percentage">80%</div>
+                  <div class="title">InDesign</div>
+                  <div class="percentage">90%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Canva</div>
+                  <div class="percentage">90%</div>
                 </div>
                 <div class="bar"></div>
               </div>
@@ -148,49 +155,101 @@
               <div class="skill">
                 <div class="label">
                   <div class="title">HTML</div>
-                  <div class="percentage">75%</div>
-                </div>
-                <div class="bar"></div>
-              </div>
-              <div class="skill">
-                <div class="label">
-                  <div class="title">CSS</div>
-                  <div class="percentage">75%</div>
-                </div>
-                <div class="bar"></div>
-              </div>
-              <div class="skill">
-                <div class="label">
-                  <div class="title">Javascript</div>
-                  <div class="percentage">40%</div>
-                </div>
-                <div class="bar"></div>
-              </div>
-              <div class="skill">
-                <div class="label">
-                  <div class="title">Bootstrap</div>
                   <div class="percentage">80%</div>
                 </div>
                 <div class="bar"></div>
               </div>
               <div class="skill">
                 <div class="label">
-                  <div class="title">Microsoft Office</div>
-                  <div class="percentage">99%</div>
+                  <div class="title">CSS</div>
+                  <div class="percentage">80%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Javascript</div>
+                  <div class="percentage">60%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Vue.js</div>
+                  <div class="percentage">50%</div>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div class="skill">
+                <div class="label">
+                  <div class="title">Git</div>
+                  <div class="percentage">90%</div>
                 </div>
                 <div class="bar"></div>
               </div>
             </div>
           </div>
         </div>
+        <div class="image-right">
+          <img src="assets/images/hero_background.svg" alt="skills_right" />
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="content">
+          <h1 class="title" data-menu-item="projects">Projects</h1>
+
+          <div class="line-first">
+            <div class="image">
+              <img src="assets/images/projects/valentine_postcard.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/gulas.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/portrait_smoke.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/brožura.svg" />
+            </div>
+          </div>
+
+          <div class="line-second">
+            <div class="image">
+              <img src="assets/images/projects/flasa.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/pozvanka.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/mountains.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/svadobna pozvanka.svg" />
+            </div>
+          </div>
+
+          <div class="line-third">
+            <div class="image">
+              <img src="assets/images/projects/hoodie_paddleboard.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/diplom.svg" />
+            </div>
+            <div class="image">
+              <img src="assets/images/projects/maj.svg" />
+            </div>
+          </div>
       </section>
 
       <section class="contact">
         <div class="content">
           <h1 class="title" data-menu-item="contact">Contact Me</h1>
-
           <div class="inner">
             <div class="message-me">
+
+              <h2 class="subtitle">Message me</h2>
+
               <form
                 class="contact-form"
                 action="https://formspree.io/f/meqwvalv"
@@ -223,6 +282,19 @@
               </form>
             </div>
 
+            <div class="contact-info">
+              <div class="contact-item">
+                <img src="assets/images/contacts/Phone.svg" />
+                <div class="text">+421 911 123 456</div>
+              </div>
+              <div class="contact-item">
+                <img src="assets/images/contacts/At_sign.svg" />
+                <div class="text">angelikabrinckova@gmail.com</div>
+              </div>
+              <div class="contact-item">
+                <img src="assets/images/contacts/Address_sign.svg" />
+                <div class="text">Bratislava</div>
+              </div>
             </div>
           </div>
         </div>

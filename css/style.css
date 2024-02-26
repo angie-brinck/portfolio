@@ -184,22 +184,29 @@ main > .about > .content > .inner > .photo > .frame {
 }
 
 main > .about > .content > .inner > .description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+main > .about > .content > .inner > .description > .wrapper {
   width: 644px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  gap: 25px;
 }
 
-main > .about > .content > .inner > .description > .title {
+main > .about > .content > .inner > .description > .wrapper > .title {
   font-size: 36px;
   font-weight: 500;
   line-height: 47px;
   margin-bottom: 20px;
 }
 
-main > .about > .content > .inner > .description > .text {
+main > .about > .content > .inner > .description > .wrapper > .text {
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -211,11 +218,29 @@ main
   > .content
   > .inner
   > .description
+  > .wrapper
   > form.download-form
   > button.download {
   margin-top: 50px;
   width: 368px;
   height: 66px;
+}
+
+main > .skills {
+  position: relative;
+}
+
+main > .skills > .image-left {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  transform: scaleX(-1);
+}
+
+main > .skills > .image-right {
+  position: absolute;
+  top: 120px;
+  right: 0;
 }
 
 main > .skills > .content > h1.title {
@@ -287,7 +312,7 @@ main
   > .content
   > .skill-levels
   > .left
-  > .skill:nth-child(1)
+  > .skill:nth-child(n)
   > .bar::before {
   width: 90%;
 }
@@ -296,20 +321,10 @@ main
   > .skills
   > .content
   > .skill-levels
-  > .left
-  > .skill:nth-child(n + 2)
+  > .right
+  > .skill:nth-child(n)
   > .bar::before {
   width: 80%;
-}
-
-main
-  > .skills
-  > .content
-  > .skill-levels
-  > .right
-  > .skill:nth-child(n + 1)
-  > .bar::before {
-  width: 75%;
 }
 
 main
@@ -319,7 +334,7 @@ main
   > .right
   > .skill:nth-child(3)
   > .bar::before {
-  width: 40%;
+  width: 60%;
 }
 
 main
@@ -329,7 +344,7 @@ main
   > .right
   > .skill:nth-child(4)
   > .bar::before {
-  width: 80%;
+  width: 50%;
 }
 
 main
@@ -339,21 +354,111 @@ main
   > .right
   > .skill:nth-child(5)
   > .bar::before {
-  width: 99%;
+  width: 90%;
+}
+
+main > .projects {
+  height: auto;
+  min-height: auto;
+  position: relative;
+}
+
+main > .projects > .content > h1.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+main > .projects > .content > h1.title::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background-color: var(--color-highlight);
+  position: relative;
+  top: 10px;
+  left: 60px;
+}
+
+main > .projects > .content > .line-first,
+main > .projects > .content > .line-second,
+main > .projects > .content > .line-third {
+  display: flex;
+  flex-wrap: wrap;
+
+  .image {
+    flex: 0 1 auto;
+  }
+}
+
+main > .projects > .content > .line-first {
+  gap: 20px;
+
+  .image:nth-child(1) {
+    margin-top: -200px;
+    margin-right: -100px;
+  }
+
+  .image:nth-child(2) {
+    margin-top: 200px;
+  }
+
+  .image:nth-child(3) {
+    margin-top: 100px;
+  }
+}
+
+main > .projects > .content > .line-second {
+  margin-left: 200px;
+  gap: 50px;
+
+  .image:nth-child(1) {
+    margin-top: -200px;
+  }
+
+  .image:nth-child(3) {
+    margin-top: 100px;
+  }
+
+  .image:nth-child(4) {
+    margin-top: -100px;
+  }
+}
+
+main > .projects > .content > .line-third {
+
+  .image:nth-child(1) {
+    margin-top: -500px;
+  }
+
+  .image:nth-child(2) {
+    margin-left: -300px;
+  }
+
+  .image:nth-child(2) {
+    margin-left: -400px;
+  }
 }
 
 main > .contact {
-  min-height: calc(100vh - var(--footer-size));
+  min-height: auto;
 }
 
 main > .contact > .content {
-  padding-bottom: 200px;
-  background: url("../assets/images/rainbow_flowing_waves_abstract_banner_design_0507\ [Převedený].jpg");
+  background: url("../assets/images/Contact_me_background.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 main > .contact > .content > h1.title {
+  align-self: center;
   font-size: 48px;
   font-weight: 700;
   line-height: 63px;
@@ -374,16 +479,16 @@ main > .contact > .content > h1.title::after {
 main > .contact > .content > .inner {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
 }
 
 main > .contact > .content > .inner > .message-me {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 main > .contact > .content > .inner > .message-me {
@@ -391,12 +496,12 @@ main > .contact > .content > .inner > .message-me {
   flex-direction: column;
 }
 
-main > .contact > .content > .inner > .message-me > h2.title {
-  margin-bottom: 40px;
+main > .contact > .content > .inner > .message-me > h2.subtitle {
+  margin-bottom: 20px;
   font-size: 30px;
+  align-self: end;
   font-weight: 700;
-  line-height: 40px;
-  border: none;
+  color: #f4fa1a;
 }
 
 main > .contact > .content > .inner > .message-me > .contact-form {
@@ -456,14 +561,41 @@ main > .contact > .content > .inner > .message-me textarea:focus {
 }
 
 main > .contact > .content > .inner > .message-me > .contact-form > button {
-  width: 300px;
-  height: 66px;
+  font-size: 16px;
+  padding: 0 20px;
+  width: 220px;
+  height: 60px;
+}
+
+main > .contact > .content > .inner > .contact-info {
+  padding: 20px 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: #f4fa1a;
+  color: #000;
+  border-radius: 50px;
+
+  display: flex;
+  flex: 0 0 auto;
+  gap: 30px;
+}
+
+main > .contact > .content > .inner > .contact-info > .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main > .contact > .content > .inner > .contact-info > .contact-item > img {
+  max-width: 40px;
+  max-height: 40px;
 }
 
 footer {
   height: var(--footer-size);
+  height: 100px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
   font-size: 24px;
@@ -530,18 +662,28 @@ footer {
 }
 
 @media screen and (max-width: 1670px) {
-  main > .projects > .content > .inner {
-    justify-content: center;
-  }
+  main > .projects > .content {
+    .line-first,
+    .line-second,
+    .line-third {
+      margin: 0 !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
 
-  main > .projects > .content > .inner > .project:nth-child(n) {
-    margin-top: 0;
-  }
+      .image {
+        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+      }
 
-  main > .contact > .content > .inner {
-    flex-direction: column;
+      .image > img {
+        width: 80%;
+        height: 80%;
+      }
+    }
   }
-
 }
 
 @media screen and (max-width: 1399px) {
@@ -551,10 +693,6 @@ footer {
 
   .content {
     padding: 200px 100px 0;
-  }
-
-  main > .projects > .content {
-    background: none;
   }
 }
 
@@ -630,12 +768,16 @@ footer {
     height: auto;
     min-height: auto;
   }
-
 }
 
 @media screen and (max-width: 767px) {
   .content {
     padding: 100px 50px 0;
+  }
+
+  main > .skills > .image-left,
+  main > .skills > .image-right {
+    display: none;
   }
 
   main > .skills > .content > .skill-levels {
@@ -647,39 +789,9 @@ footer {
     font-size: 14px;
   }
 
-  main > section.projects {
-    height: auto;
-    min-height: auto;
-  }
-
-  main > .projects > .content {
-    /* background: none; */
-    height: auto;
-    padding: 50px;
-  }
-
-  main > .projects > .content > .title {
-    margin-bottom: 50px;
-  }
-
-  main > .projects > .content > .inner {
-    gap: 30px;
-  }
-
-  main > .projects > .content > .inner > .project:nth-child(n) {
-    text-align: center;
+  main > .contact > .content > .inner > .message-me {
     width: 100%;
   }
-
-  main > .projects > .content > .inner > .project:last-child {
-    margin-top: -170px;
-  }
-
-  main > .projects > .content > .inner > .project:nth-child(n) > img {
-    text-align: center;
-    transform: scale(0.85);
-  }
-
   main > .contact > .content > .inner > .message-me > .contact-form {
     width: 100%;
   }
@@ -689,6 +801,10 @@ footer {
     gap: 20px;
   }
 
+  main > .contact > .content > .inner > .contact-info {
+    flex-direction: column;
+  }
+
   footer {
     margin-top: 50px;
     font-size: 14px;
@@ -696,6 +812,10 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  main > .home > .inner {
+    margin-top: 100px;
+  }
+
   main > .about > .content > .inner > .photo {
     transform: scale(0.5);
     padding-top: 0px;
@@ -753,9 +873,5 @@ footer {
     padding-left: 0;
     padding-right: 0;
     background: none;
-  }
-
-  main > .contact > .content {
-    padding: 0 25px;
   }
 }
